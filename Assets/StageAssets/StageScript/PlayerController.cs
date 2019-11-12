@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody rgbody;
     private Animator animator;
+
+    public GameObject Explode;
     // Start is called before the first frame update
     void Start()
     {
@@ -57,6 +59,34 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetBool("Left", false);
         }
+    }
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.tag == "Asteroid")
+        {
+            rgbody.useGravity = true;
+            shipSpeed = 0;
+            var ex = Instantiate(Explode, this.transform.position, Quaternion.identity);
+        }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Energy")
+        {
+            StartCoroutine(SpeedUp());
+
+        }
+    }
+
+    IEnumerator SpeedUp()
+    {
+        shipSpeed = 20000 + 30000;
+        Debug.Log(shipSpeed);
+
+        yield return new WaitForSeconds(1f);
+
+        shipSpeed = 20000;
+        Debug.Log(shipSpeed);
     }
 }
 

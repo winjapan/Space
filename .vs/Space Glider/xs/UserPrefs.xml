@@ -1,7 +1,10 @@
 ﻿<Properties StartupConfiguration="{5C86C03A-CF94-DE41-A1FA-E8C647AA3C51}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/StageAssets/StageScript/PlayerController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/StageAssets/StageScript/CameraCintroller.cs">
     <Files>
-      <File FileName="Assets/StageAssets/StageScript/PlayerController.cs" Line="1" Column="1" />
+      <File FileName="Assets/StageAssets/StageScript/PlayerController.cs" Line="74" Column="44" />
+      <File FileName="Assets/StageAssets/StageScript/Life Time.cs" Line="15" Column="34" />
+      <File FileName="Assets/StageAssets/StageScript/ItemController.cs" Line="22" Column="26" />
+      <File FileName="Assets/StageAssets/StageScript/CameraCintroller.cs" Line="24" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
