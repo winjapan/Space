@@ -60,7 +60,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Earth\Scripts\EarthRootScript.cs" />
+    <Compile Include="Assets\Earth\Scripts\EarthScript.cs" />
+    <Compile Include="Assets\Earth\Scripts\MoveScript.cs" />
+    <Compile Include="Assets\Earth\Scripts\SphereScript.cs" />
     <Compile Include="Assets\StarSparrow\Readme\Readme Files\Scripts\Readme.cs" />
+    <None Include="Assets\Earth\Readme.txt" />
+    <None Include="Assets\Earth\Materials\EarthShader.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/wadamika/Desktop/Space Glider/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
