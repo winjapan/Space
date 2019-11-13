@@ -12,6 +12,10 @@ public class PlayerController : MonoBehaviour
 
     public GameObject Explode;
     public GameObject Warp;
+    public GameObject UpBlackHole;
+    public GameObject DownBlackHole;
+    public GameObject LeftBlackHole;
+    public GameObject RightBlackHole;
     // Start is called before the first frame update
     void Start()
     {
@@ -65,9 +69,24 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.tag == "Asteroid")
         {
-            rgbody.useGravity = true;
+            rgbody.isKinematic = true;
+
             shipSpeed = 0;
             var ex = Instantiate(Explode, this.transform.position, Quaternion.identity);
+            DownBlackHole.SetActive(false);
+            UpBlackHole.SetActive(false);
+            LeftBlackHole.SetActive(false);
+            RightBlackHole.SetActive(false);
+        }
+        if (other.gameObject.tag == "Out")
+        {
+            rgbody.isKinematic = true;
+            shipSpeed = 0;
+            var ex = Instantiate(Explode, this.transform.position, Quaternion.identity);
+            DownBlackHole.SetActive(false);
+            UpBlackHole.SetActive(false);
+            LeftBlackHole.SetActive(false);
+            RightBlackHole.SetActive(false);
         }
     }
     private void OnTriggerEnter(Collider other)
