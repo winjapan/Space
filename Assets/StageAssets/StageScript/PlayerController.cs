@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float shipSpeed = 20000;
+    public float shipSpeed = 50000;
     public float accel = 5;
 
     private Rigidbody rgbody;
     private Animator animator;
 
     public GameObject Explode;
+    public GameObject Warp;
     // Start is called before the first frame update
     void Start()
     {
@@ -80,13 +81,14 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator SpeedUp()
     {
-        shipSpeed = 20000 + 30000;
+        shipSpeed = 50000 + 20000;
         Debug.Log(shipSpeed);
+        Warp.SetActive(true);
+        yield return new WaitForSeconds(2f);
 
-        yield return new WaitForSeconds(1f);
-
-        shipSpeed = 20000;
+        shipSpeed = 50000;
         Debug.Log(shipSpeed);
+        Warp.SetActive(false);
     }
 }
 
