@@ -77,22 +77,25 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.tag == "Asteroid")
         {
-            rgbody.isKinematic = true;
+           
 
             shipSpeed = 0;
+            Debug.Log(shipSpeed);
+            rgbody.useGravity = true;
             var ex = Instantiate(Explode, this.transform.position, Quaternion.identity);
             BlackHoles.SetActive(false);
             GameObject.Find("Main Camera").GetComponent<AudioSource>().enabled = false;
             GameOver.gameObject.SetActive(true);
-            SFanima.enabled = true;
+           
             Destroy(Map);
-            this.transform.position = Point.transform.position;
-            this.enabled = false;
             Invoke("Retune", 5);
+            this.enabled = false;
+
+            StartCoroutine(DestroyPlayer());
         }
         if (other.gameObject.tag == "Out")
         {
-            rgbody.isKinematic = true;
+            rgbody.useGravity= true;
             shipSpeed = 0;
             var ex = Instantiate(Explode, this.transform.position, Quaternion.identity);
             BlackHoles.SetActive(false);
@@ -100,9 +103,9 @@ public class PlayerController : MonoBehaviour
             GameOver.gameObject.SetActive(true);
             SFanima.enabled = true;
             Destroy(Map);
-            this.transform.position = Point.transform.position;
+           
             this.enabled = false; 
-            Invoke("Retune", 5);
+           
         }
     }
     private void OnTriggerEnter(Collider other)
@@ -126,7 +129,15 @@ public class PlayerController : MonoBehaviour
     {
         titleButton.gameObject.SetActive(true);
         resultImg.gameObject.SetActive(false);
+    }
 
+    IEnumerator DestroyPlayer()
+    {
+        yield return new WaitForSeconds(3);
+        SFanima.enabled = true;
+        rgbody.isKinematic = true;
+        yield return new WaitForSeconds(5);
+        Invoke("Retune", 5);
     }
     IEnumerator SpeedUp()
     {

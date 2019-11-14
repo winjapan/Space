@@ -64,6 +64,7 @@
     <Compile Include="Assets\CreateMap.cs" />
     <Compile Include="Assets\CreditMove.cs" />
     <Compile Include="Assets\CreditTimeLine.cs" />
+    <Compile Include="Assets\DistanceManajer.cs" />
     <Compile Include="Assets\Earth\Scripts\EarthRootScript.cs" />
     <Compile Include="Assets\Earth\Scripts\EarthScript.cs" />
     <Compile Include="Assets\Earth\Scripts\MoveScript.cs" />
