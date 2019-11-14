@@ -14,6 +14,7 @@ public class CreditTimeLine : MonoBehaviour
 
     public GameObject SpaceShip;
     public GameObject Credit;
+    public GameObject Earth;
     // Start is called before the first frame update
     void Start()
     {
@@ -60,6 +61,7 @@ public class CreditTimeLine : MonoBehaviour
             Credit5.gameObject.SetActive(false);
             SpaceShip.SetActive(true);
             Credit.SetActive(false);
+            Earth.SetActive(false);
             Start();
         }
     }

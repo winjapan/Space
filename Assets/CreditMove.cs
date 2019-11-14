@@ -6,6 +6,7 @@ public class CreditMove : MonoBehaviour
 {
     public GameObject Spaceship;
     public GameObject Credit;
+    public GameObject Earth;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,5 +23,6 @@ public class CreditMove : MonoBehaviour
     {
         Spaceship.SetActive(false);
         Credit.SetActive(true);
+        Earth.SetActive(true);
     }
 }
