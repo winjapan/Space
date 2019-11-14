@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
     public float shipSpeed = 50000;
@@ -13,6 +13,16 @@ public class PlayerController : MonoBehaviour
     public GameObject Explode;
     public GameObject Warp;
     public GameObject BlackHoles;
+
+    public Text Clear;
+    public Text GameOver;
+    public Animator SFanima;
+    public Image resultImg;
+    public Button titleButton;
+
+    public GameObject Map;
+    public GameObject Point;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -72,7 +82,13 @@ public class PlayerController : MonoBehaviour
             shipSpeed = 0;
             var ex = Instantiate(Explode, this.transform.position, Quaternion.identity);
             BlackHoles.SetActive(false);
-
+            GameObject.Find("Main Camera").GetComponent<AudioSource>().enabled = false;
+            GameOver.gameObject.SetActive(true);
+            SFanima.enabled = true;
+            Destroy(Map);
+            this.transform.position = Point.transform.position;
+            this.enabled = false;
+            Invoke("Retune", 5);
         }
         if (other.gameObject.tag == "Out")
         {
@@ -80,7 +96,13 @@ public class PlayerController : MonoBehaviour
             shipSpeed = 0;
             var ex = Instantiate(Explode, this.transform.position, Quaternion.identity);
             BlackHoles.SetActive(false);
-           
+            GameObject.Find("Main Camera").GetComponent<AudioSource>().enabled = false;
+            GameOver.gameObject.SetActive(true);
+            SFanima.enabled = true;
+            Destroy(Map);
+            this.transform.position = Point.transform.position;
+            this.enabled = false; 
+            Invoke("Retune", 5);
         }
     }
     private void OnTriggerEnter(Collider other)
@@ -90,8 +112,22 @@ public class PlayerController : MonoBehaviour
             StartCoroutine(SpeedUp());
 
         }
+        if (other.gameObject.tag == "Earth")
+        {
+            GameObject.Find("Main Camera").GetComponent<AudioSource>().enabled = false;
+            Clear.gameObject.SetActive(true);
+            SFanima.enabled = true;
+
+            StartCoroutine(SpeedDown());
+        }
     }
 
+    void Retune()
+    {
+        titleButton.gameObject.SetActive(true);
+        resultImg.gameObject.SetActive(false);
+
+    }
     IEnumerator SpeedUp()
     {
         shipSpeed = 50000 + 20000;
@@ -102,6 +138,16 @@ public class PlayerController : MonoBehaviour
         shipSpeed = 50000;
         Debug.Log(shipSpeed);
         Warp.SetActive(false);
+    }
+
+    IEnumerator SpeedDown()
+    {
+        shipSpeed = 20000;
+
+        yield return new WaitForSeconds(0.5f);
+        rgbody.isKinematic = true;
+        shipSpeed = 0;
+        Invoke("Retune", 5);
     }
 }
 

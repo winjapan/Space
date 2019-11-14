@@ -17,8 +17,6 @@ public class CreateMap : MonoBehaviour
     public int m_width = 5; //x軸方向
     public int m_heigt = 5;//y軸方向
 
-
-
     // Use this for initialization
     void Start()
     {
@@ -76,4 +74,5 @@ public class CreateMap : MonoBehaviour
             }
         }
     }
+
 }

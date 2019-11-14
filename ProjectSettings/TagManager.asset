@@ -8,6 +8,7 @@ TagManager:
   - Asteroid
   - Energy
   - Out
+  - Earth
   layers:
   - Default
   - TransparentFX
