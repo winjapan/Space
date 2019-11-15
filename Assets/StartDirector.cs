@@ -31,6 +31,6 @@ public class StartDirector : MonoBehaviour
         GameObject.Find("StarSparrow1").GetComponent<PlayerController>().enabled = true;
         Map.SetActive(true);
         Earth.SetActive(true);
-
+        BlackHoles.SetActive(true);
     }
 }
