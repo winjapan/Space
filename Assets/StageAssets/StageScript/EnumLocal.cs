@@ -12,19 +12,30 @@ public class EnumLocal : MonoBehaviour
     }
 
     public static Language language;
+    private AudioSource audioSource;
 
-  public void LocalJpClicked()
+    public AudioClip button2;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
+    public void LocalJpClicked()
     {
         language = Language.Japanese;
+        audioSource.PlayOneShot(button2);
     }
 
     public void LocalEnClicked()
     {
         language = Language.English;
+        audioSource.PlayOneShot(button2);
     }
 
     public void LocalCnClicked()
     {
         language = Language.Chinese;
+        audioSource.PlayOneShot(button2);
     }
 }

@@ -89,6 +89,7 @@
     <Compile Include="Assets\Scripts\ScrollDetailTexture.cs" />
     <Compile Include="Assets\Scripts\ShowSliderValue.cs" />
     <Compile Include="Assets\Scripts\TiltWindow.cs" />
+    <Compile Include="Assets\SoundDirector.cs" />
     <Compile Include="Assets\StageAssets\StageScript\CameraCintroller.cs" />
     <Compile Include="Assets\StageAssets\StageScript\CreateItem.cs" />
     <Compile Include="Assets\StageAssets\StageScript\CreateMap.cs" />

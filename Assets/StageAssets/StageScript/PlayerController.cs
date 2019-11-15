@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
 
     public GameObject Map;
     public GameObject Point;
+    public GameObject Siren;
 
     public ScoreResult scoreResult;
     private AudioSource audioSource;
@@ -91,7 +92,9 @@ public class PlayerController : MonoBehaviour
             BlackHoles.SetActive(false);
             GameObject.Find("Main Camera").GetComponent<AudioSource>().enabled = false;
             Destroy(Map);
-            Invoke("Stop",1f);
+            Siren.SetActive(true);
+            animator.SetTrigger("Destroy");
+            Invoke("Stop",4f);
         }
         if (other.gameObject.tag == "Out")
         {
@@ -102,7 +105,9 @@ public class PlayerController : MonoBehaviour
             BlackHoles.SetActive(false);
             GameObject.Find("Main Camera").GetComponent<AudioSource>().enabled = false;
             Destroy(Map);
-            Invoke("Stop", 1f);
+            Siren.SetActive(true);
+            animator.SetTrigger("Destroy");
+            Invoke("Stop", 4f);
         }
     }
 

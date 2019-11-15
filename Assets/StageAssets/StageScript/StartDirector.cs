@@ -12,10 +12,13 @@ public class StartDirector : MonoBehaviour
     public GameObject Earth;
     public GameObject BlackHoles;
     public GameObject Map;
+
+    public AudioClip button;
+    private AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
-        
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -25,6 +28,7 @@ public class StartDirector : MonoBehaviour
     }
     public void OnButtonClicked()
     {
+        audioSource.PlayOneShot(button);
         Title.gameObject.SetActive(false);
         result.gameObject.SetActive(true);
         GameObject.Find("Main Camera").GetComponent<AudioSource>().enabled = true;

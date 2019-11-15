@@ -7,10 +7,13 @@ public class SettingMove : MonoBehaviour
 {
     public Image Setting;
     public Image Title;
+
+    public AudioClip button;
+    private AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
-        
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -20,6 +23,7 @@ public class SettingMove : MonoBehaviour
     }
     public void OnButtonClicked()
     {
+        audioSource.PlayOneShot(button);
         Setting.gameObject.SetActive(true);
         Title.gameObject.SetActive(false);
     }

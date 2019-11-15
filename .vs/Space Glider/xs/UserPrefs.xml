@@ -1,22 +1,17 @@
 ﻿<Properties StartupConfiguration="{5C86C03A-CF94-DE41-A1FA-E8C647AA3C51}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/StageAssets/StageScript/PlayerController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/SoundDirector.cs">
     <Files>
-      <File FileName="Assets/StageAssets/StageScript/PlayerController.cs" Line="125" Column="42" />
-      <File FileName="Assets/StageAssets/StageScript/Life Time.cs" Line="15" Column="34" />
-      <File FileName="Assets/StageAssets/StageScript/ItemController.cs" Line="22" Column="26" />
-      <File FileName="Assets/StageAssets/StageScript/CameraCintroller.cs" Line="13" Column="38" />
-      <File FileName="Assets/StageAssets/StageScript/CreateMap.cs" Line="78" Column="2" />
+      <File FileName="Assets/StageAssets/StageScript/CreateMap.cs" Line="56" Column="30" />
       <File FileName="Assets/StageAssets/StageScript/CreateItem.cs" Line="40" Column="81" />
-      <File FileName="Assets/StageAssets/StageScript/CreditTimeLine.cs" Line="31" Column="10" />
-      <File FileName="Assets/StageAssets/StageScript/CreditMove.cs" Line="9" Column="29" />
-      <File FileName="Assets/StageAssets/StageScript/RetuneTitle.cs" Line="24" Column="44" />
-      <File FileName="Assets/StageAssets/StageScript/RetuneToTitle.cs" Line="20" Column="10" />
-      <File FileName="Assets/StageAssets/StageScript/SettingMove.cs" Line="24" Column="41" />
-      <File FileName="Assets/StageAssets/StageScript/TutorialMove.cs" Line="24" Column="43" />
-      <File FileName="Assets/StageAssets/StageScript/StartDirector.cs" Line="10" Column="25" />
-      <File FileName="Assets/StageAssets/StageScript/DistanceManajer.cs" Line="33" Column="66" />
-      <File FileName="Assets/StageAssets/StageScript/LocalText.cs" Line="37" Column="23" />
-      <File FileName="Assets/StageAssets/StageScript/EnumLocal.cs" Line="17" Column="6" />
+      <File FileName="Assets/StageAssets/StageScript/CreditMove.cs" Line="27" Column="39" />
+      <File FileName="Assets/StageAssets/StageScript/RetuneTitle.cs" Line="25" Column="39" />
+      <File FileName="Assets/StageAssets/StageScript/RetuneToTitle.cs" Line="12" Column="6" />
+      <File FileName="Assets/StageAssets/StageScript/SettingMove.cs" Line="26" Column="39" />
+      <File FileName="Assets/StageAssets/StageScript/TutorialMove.cs" Line="25" Column="6" />
+      <File FileName="Assets/StageAssets/StageScript/StartDirector.cs" Line="31" Column="39" />
+      <File FileName="Assets/StageAssets/StageScript/PlayerController.cs" Line="109" Column="44" />
+      <File FileName="Assets/StageAssets/StageScript/EnumLocal.cs" Line="15" Column="12" />
+      <File FileName="Assets/SoundDirector.cs" Line="14" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
