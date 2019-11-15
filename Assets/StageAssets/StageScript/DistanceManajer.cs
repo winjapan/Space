@@ -30,7 +30,7 @@ public class DistanceManajer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Distance.text = this.transform.position.z * scorePoint + "(Km * 100)".ToString();
+        Distance.text = this.transform.position.z * scorePoint + "P".ToString();
         Debug.Log(transform.position.z * scorePoint);
     }
    

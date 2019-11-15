@@ -60,16 +60,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\CreateItem.cs" />
-    <Compile Include="Assets\CreateMap.cs" />
-    <Compile Include="Assets\CreditMove.cs" />
-    <Compile Include="Assets\CreditTimeLine.cs" />
-    <Compile Include="Assets\DistanceManajer.cs" />
     <Compile Include="Assets\Earth\Scripts\EarthRootScript.cs" />
     <Compile Include="Assets\Earth\Scripts\EarthScript.cs" />
     <Compile Include="Assets\Earth\Scripts\MoveScript.cs" />
     <Compile Include="Assets\Earth\Scripts\SphereScript.cs" />
-    <Compile Include="Assets\GameOverResult.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\CFX_Demo_RandomDir.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\CFX_Demo_RotateCamera.cs" />
@@ -84,9 +78,6 @@
     <Compile Include="Assets\JMO Assets\WarFX\Scripts\WFX_BulletHoleDecal.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Scripts\WFX_LightFlicker.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Spawn System\CFX_SpawnSystem.cs" />
-    <Compile Include="Assets\RetuneTitle.cs" />
-    <Compile Include="Assets\RetuneToTitle.cs" />
-    <Compile Include="Assets\ScoreResult.cs" />
     <Compile Include="Assets\Scripts\ActiveStateToggler.cs" />
     <Compile Include="Assets\Scripts\ApplicationManager.cs" />
     <Compile Include="Assets\Scripts\ChangeColor.cs" />
@@ -98,14 +89,25 @@
     <Compile Include="Assets\Scripts\ScrollDetailTexture.cs" />
     <Compile Include="Assets\Scripts\ShowSliderValue.cs" />
     <Compile Include="Assets\Scripts\TiltWindow.cs" />
-    <Compile Include="Assets\SettingMove.cs" />
     <Compile Include="Assets\StageAssets\StageScript\CameraCintroller.cs" />
+    <Compile Include="Assets\StageAssets\StageScript\CreateItem.cs" />
+    <Compile Include="Assets\StageAssets\StageScript\CreateMap.cs" />
+    <Compile Include="Assets\StageAssets\StageScript\CreditMove.cs" />
+    <Compile Include="Assets\StageAssets\StageScript\CreditTimeLine.cs" />
+    <Compile Include="Assets\StageAssets\StageScript\DistanceManajer.cs" />
+    <Compile Include="Assets\StageAssets\StageScript\EnumLocal.cs" />
+    <Compile Include="Assets\StageAssets\StageScript\GameOverResult.cs" />
     <Compile Include="Assets\StageAssets\StageScript\ItemController.cs" />
     <Compile Include="Assets\StageAssets\StageScript\Life Time.cs" />
+    <Compile Include="Assets\StageAssets\StageScript\LocalText.cs" />
     <Compile Include="Assets\StageAssets\StageScript\PlayerController.cs" />
+    <Compile Include="Assets\StageAssets\StageScript\RetuneTitle.cs" />
+    <Compile Include="Assets\StageAssets\StageScript\RetuneToTitle.cs" />
+    <Compile Include="Assets\StageAssets\StageScript\ScoreResult.cs" />
+    <Compile Include="Assets\StageAssets\StageScript\SettingMove.cs" />
+    <Compile Include="Assets\StageAssets\StageScript\StartDirector.cs" />
+    <Compile Include="Assets\StageAssets\StageScript\TutorialMove.cs" />
     <Compile Include="Assets\StarSparrow\Readme\Readme Files\Scripts\Readme.cs" />
-    <Compile Include="Assets\StartDirector.cs" />
-    <Compile Include="Assets\TutorialMove.cs" />
     <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S AlphaBlend Scroll.shader" />
     <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Particle AddSoft A8.shader" />
     <None Include="Assets\Earth\Readme.txt" />

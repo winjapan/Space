@@ -25,12 +25,16 @@ public class PlayerController : MonoBehaviour
     public GameObject Point;
 
     public ScoreResult scoreResult;
+    private AudioSource audioSource;
+
+    public AudioClip Speed;
     // Start is called before the first frame update
     void Start()
     {
         rgbody = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
         rgbody.AddForce(Vector3.forward * shipSpeed);
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void FixedUpdate()
@@ -118,7 +122,7 @@ public class PlayerController : MonoBehaviour
         if (other.gameObject.tag == "Energy")
         {
             StartCoroutine(SpeedUp());
-
+            audioSource.PlayOneShot(Speed);
         }
         if (other.gameObject.tag == "Earth")
         {
