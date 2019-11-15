@@ -90,32 +90,28 @@ public class PlayerController : MonoBehaviour
             var ex = Instantiate(Explode, this.transform.position, Quaternion.identity);
             BlackHoles.SetActive(false);
             GameObject.Find("Main Camera").GetComponent<AudioSource>().enabled = false;
-            GameOver.gameObject.SetActive(true);
-           
-           
             Destroy(Map);
-           
-            this.enabled = false;
-
-            SFanima.enabled = true;
-            rgbody.isKinematic = true;
+            Invoke("Stop",1f);
         }
         if (other.gameObject.tag == "Out")
         {
             rgbody.useGravity= true;
-            rgbody.isKinematic = true;
+
             shipSpeed = 0;
             var ex = Instantiate(Explode, this.transform.position, Quaternion.identity);
             BlackHoles.SetActive(false);
             GameObject.Find("Main Camera").GetComponent<AudioSource>().enabled = false;
-            GameOver.gameObject.SetActive(true);
-          
-            SFanima.enabled = true;
             Destroy(Map);
-          
- 
-           
+            Invoke("Stop", 1f);
         }
+    }
+
+    void Stop()
+    {
+        rgbody.isKinematic = true;
+        SFanima.enabled = true;
+        this.enabled = false;
+        GameOver.gameObject.SetActive(true);
     }
     private void OnTriggerEnter(Collider other)
     {

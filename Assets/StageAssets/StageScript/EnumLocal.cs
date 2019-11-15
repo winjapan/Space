@@ -4,15 +4,27 @@ using UnityEngine;
 
 public class EnumLocal : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public enum Language
     {
-        
+        Japanese,
+        English,
+        Chinese
     }
 
-    // Update is called once per frame
-    void Update()
+    public static Language language;
+
+  public void LocalJpClicked()
     {
-        
+        language = Language.Japanese;
+    }
+
+    public void LocalEnClicked()
+    {
+        language = Language.English;
+    }
+
+    public void LocalCnClicked()
+    {
+        language = Language.Chinese;
     }
 }
