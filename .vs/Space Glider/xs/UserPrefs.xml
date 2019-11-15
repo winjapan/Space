@@ -11,7 +11,7 @@
       <File FileName="Assets/StageAssets/StageScript/StartDirector.cs" Line="31" Column="39" />
       <File FileName="Assets/StageAssets/StageScript/PlayerController.cs" Line="109" Column="44" />
       <File FileName="Assets/StageAssets/StageScript/EnumLocal.cs" Line="15" Column="12" />
-      <File FileName="Assets/SoundDirector.cs" Line="14" Column="3" />
+      <File FileName="Assets/SoundDirector.cs" Line="16" Column="9" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
