@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{5C86C03A-CF94-DE41-A1FA-E8C647AA3C51}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/SoundDirector.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/PlayerControllerforSmartPhone.cs">
     <Files>
       <File FileName="Assets/StageAssets/StageScript/CreateMap.cs" Line="56" Column="30" />
       <File FileName="Assets/StageAssets/StageScript/CreateItem.cs" Line="40" Column="81" />
@@ -10,8 +10,7 @@
       <File FileName="Assets/StageAssets/StageScript/TutorialMove.cs" Line="25" Column="6" />
       <File FileName="Assets/StageAssets/StageScript/StartDirector.cs" Line="31" Column="39" />
       <File FileName="Assets/StageAssets/StageScript/PlayerController.cs" Line="109" Column="44" />
-      <File FileName="Assets/StageAssets/StageScript/EnumLocal.cs" Line="15" Column="12" />
-      <File FileName="Assets/SoundDirector.cs" Line="16" Column="9" />
+      <File FileName="Assets/PlayerControllerforSmartPhone.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

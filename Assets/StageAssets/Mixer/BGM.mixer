@@ -71,12 +71,13 @@ AudioMixerSnapshotController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: FirldSoundSnapShot
+  m_Name: FieldSoundSnapShot
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: d3d6ce1c376e9482eb268f7e55031b8a
   m_FloatValues:
-    804a6004ba8ec4eb7b523fb130a31428: 0.04171297
+    804a6004ba8ec4eb7b523fb130a31428: -0.08374829
     501f8804e05394dc8a5270ca400dd8e4: -0.037667945
+    d6dc6e1a0d3a84b80b3ad18051316a0d: -4.9356437
   m_TransitionOverrides: {}
 --- !u!243 &243440267346047286
 AudioMixerGroupController:
@@ -114,6 +115,26 @@ AudioMixerGroupController:
   m_Mute: 1
   m_Solo: 1
   m_BypassEffects: 0
+--- !u!244 &244157321470565186
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 27d6e6d2ca80d4c9eab0d6b389309752
+  m_EffectName: Normalize
+  m_MixLevel: 00160b49e50a54e7898972913661ad8f
+  m_Parameters:
+  - m_ParameterName: Fade in time
+    m_GUID: d6a8270b62af049d0b8c46463c8ab8ef
+  - m_ParameterName: Lowest volume
+    m_GUID: 3a7774625f10447d68b8c91a9ac5fd4b
+  - m_ParameterName: Maximum amp
+    m_GUID: 799b37ce16b0d4276858f7730e4f195b
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!244 &244201046621722150
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
@@ -138,6 +159,20 @@ AudioMixerEffectController:
   m_EffectID: 38e480ce60790472794b14ae7095d0f6
   m_EffectName: Attenuation
   m_MixLevel: 150891ffc42374fa29417b619ce713bf
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &244598054894630456
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: f69458da4c5af423081e6a34bcef6004
+  m_EffectName: Send
+  m_MixLevel: be9a61affbc214081892ca75da6c15c1
   m_Parameters: []
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
@@ -181,4 +216,5 @@ AudioMixerSnapshotController:
   m_SnapshotID: 0be32dec785d646d290e738eeb927b83
   m_FloatValues:
     804a6004ba8ec4eb7b523fb130a31428: 0.04171297
+    76b97fd9263b14303b159fbb2f1170a1: 1
   m_TransitionOverrides: {}

@@ -6,8 +6,6 @@ using UnityEngine.Audio;
 public class SoundDirector : MonoBehaviour
 {
     [SerializeField]
-    private AudioMixerSnapshot gamesound;
-    [SerializeField]
     UnityEngine.Audio.AudioMixer mixer;
     UnityEngine.Audio.AudioMixerSnapshot shot;
     public GameObject Director;
