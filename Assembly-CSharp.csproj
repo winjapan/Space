@@ -110,6 +110,7 @@
     <Compile Include="Assets\StageAssets\StageScript\StartDirector.cs" />
     <Compile Include="Assets\StageAssets\StageScript\TutorialMove.cs" />
     <Compile Include="Assets\StarSparrow\Readme\Readme Files\Scripts\Readme.cs" />
+    <Compile Include="Assets\StartDirectorforPhone.cs" />
     <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S AlphaBlend Scroll.shader" />
     <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Particle AddSoft A8.shader" />
     <None Include="Assets\Earth\Readme.txt" />

@@ -6,7 +6,9 @@ using UnityEngine.UI;
 public class PlayerControllerforSmartPhone : MonoBehaviour
 {
     public float shipSpeed = 50000;
-    public float accel = 5;
+    public float accel = 30;
+    public float rightaccel = 25;
+    public float leftaccel = -25;
 
     private Rigidbody rgbody;
     private Animator animator;
@@ -30,6 +32,16 @@ public class PlayerControllerforSmartPhone : MonoBehaviour
     private AudioSource audioSource;
 
     public AudioClip Speed;
+
+    public Button Up;
+    public Button Down;
+    public Button Right;
+    public Button Left;
+
+    public bool isClick;
+    public bool isDown;
+    public bool isRight;
+    public bool isLeft;
     // Start is called before the first frame update
     void Start()
     {
@@ -48,44 +60,128 @@ public class PlayerControllerforSmartPhone : MonoBehaviour
         //スマホのタップ位置＋右でプレイヤーのアニメーション”Right”を実行
         //スマホのタップ位ー左でプレイヤーのアニメーション”Left”を実行
         //スマホのタップ位置が０（中央）の時は、プレイヤーのアニメーションはアイドル状態
-        if (Input.GetKey(KeyCode.UpArrow))
+
+        //animator.SetBool("Down", true);
+        //animator.SetBool("Right", true);
+        //animator.SetBool("Left", true);
+
+        //
+        //animator.SetBool("Down", false);
+        //animator.SetBool("Right", false);
+        //animator.SetBool("Left", false);
+
+        //if (isClick == true)
+        //{
+        //UpButtonClicked();
+        //}
+
+        //if (isClick == false)
+        //{
+        //    UpButtonNoneClicked();
+        //}
+
+        if (isClick)
         {
-            transform.position += transform.up * accel;
-            animator.SetBool("Up", true);
-        }
-        else
-        {
-            animator.SetBool("Up", false);
+           UpMove();
         }
 
-        if (Input.GetKey(KeyCode.DownArrow))
+        if (isDown)
         {
-            transform.position -= transform.up * accel;
-            animator.SetBool("Down", true);
-        }
-        else
-        {
-            animator.SetBool("Down", false);
-        }
-        if (Input.GetKey(KeyCode.RightArrow))
-        {
-            transform.position += transform.right * accel;
-            animator.SetBool("Right", true);
-        }
-        else
-        {
-            animator.SetBool("Right", false);
+            DownMove();
         }
 
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (isRight)
         {
-            transform.position -= transform.right * accel;
-            animator.SetBool("Left", true);
+            RightMove();
         }
-        else
+        if (isLeft)
         {
-            animator.SetBool("Left", false);
+            LeftMove();
         }
+    }
+
+    public void OnUpClickDown()
+    {
+       
+        animator.SetBool("Up", true);
+        isClick = true;
+        //UpButtonNoneClicked();
+    }
+
+    public void OnUpClickUp()
+    {
+        isClick = false;
+        animator.SetBool("Up", false);
+    }
+
+    public void UpMove()
+    {
+        this.transform.position += transform.up * accel;
+      
+    }
+
+    public void OnDownClickDown()
+    {
+
+        animator.SetBool("Down", true);
+        isClick = true;
+        //UpButtonNoneClicked();
+    }
+
+    public void OnDownClickUp()
+    {
+        isClick = false;
+        animator.SetBool("Down", false);
+    }
+
+    public void DownMove()
+    {
+        this.transform.position -= transform.up * accel;
+    }
+
+    public void OnRightClickDown()
+    {
+
+        animator.SetBool("Right", true);
+        isClick = true;
+   
+        //UpButtonNoneClicked();
+    }
+
+    public void OnRightClickUp()
+    {
+        isClick = false;
+        animator.SetBool("Right", false);
+       
+    }
+
+    public void RightMove()
+    {
+        transform.position += transform.right * accel;
+        //transform.position += transform.right *rightaccel;
+        //Vector3 direction = new Vector3(accel, 0).normalized;
+        //transform.Translater(1,1,1);
+    }
+    public void OnLeftClickDown()
+    {
+
+        animator.SetBool("Left", true);
+        isClick = true;
+     
+        //UpButtonNoneClicked();
+    }
+
+    public void OnLeftClickUp()
+    {
+        isClick = false;
+        animator.SetBool("Left", false);
+    }
+
+    public void LeftMove()
+    {
+        //transform.position -= transform.forward * accel;
+        transform.position -= transform.right * accel;
+
     }
     private void OnCollisionEnter(Collision other)
     {
