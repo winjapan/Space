@@ -124,13 +124,13 @@ public class PlayerControllerforSmartPhone : MonoBehaviour
     {
 
         animator.SetBool("Down", true);
-        isClick = true;
+        isDown = true;
         //UpButtonNoneClicked();
     }
 
     public void OnDownClickUp()
     {
-        isClick = false;
+        isDown = false;
         animator.SetBool("Down", false);
     }
 
@@ -143,14 +143,14 @@ public class PlayerControllerforSmartPhone : MonoBehaviour
     {
 
         animator.SetBool("Right", true);
-        isClick = true;
+        isRight = true;
    
         //UpButtonNoneClicked();
     }
 
     public void OnRightClickUp()
     {
-        isClick = false;
+        isRight = false;
         animator.SetBool("Right", false);
        
     }
@@ -166,14 +166,14 @@ public class PlayerControllerforSmartPhone : MonoBehaviour
     {
 
         animator.SetBool("Left", true);
-        isClick = true;
+        isLeft = true;
      
         //UpButtonNoneClicked();
     }
 
     public void OnLeftClickUp()
     {
-        isClick = false;
+        isLeft = false;
         animator.SetBool("Left", false);
     }
 
