@@ -254,12 +254,6 @@
     <Reference Include="Unity.Analytics.StandardEvents">
       <HintPath>/Users/wadamika/Desktop/Space Glider/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>/Applications/Unity/Hub/Editor/2018.4.11f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>/Applications/Unity/Hub/Editor/2018.4.11f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
-    </Reference>
     <Reference Include="netstandard">
       <HintPath>/Applications/Unity/Hub/Editor/2018.4.11f1/Unity.app/Contents/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
     </Reference>
@@ -629,7 +623,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\CreateMap.cs" />
     <Compile Include="Assets\Earth\Scripts\EarthRootScript.cs" />
     <Compile Include="Assets\Earth\Scripts\EarthScript.cs" />
     <Compile Include="Assets\Earth\Scripts\MoveScript.cs" />
@@ -648,6 +641,7 @@
     <Compile Include="Assets\JMO Assets\WarFX\Scripts\WFX_BulletHoleDecal.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Scripts\WFX_LightFlicker.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Spawn System\CFX_SpawnSystem.cs" />
+    <Compile Include="Assets\PlayerControllerforSmartPhone.cs" />
     <Compile Include="Assets\Scripts\ActiveStateToggler.cs" />
     <Compile Include="Assets\Scripts\ApplicationManager.cs" />
     <Compile Include="Assets\Scripts\ChangeColor.cs" />
@@ -659,11 +653,27 @@
     <Compile Include="Assets\Scripts\ScrollDetailTexture.cs" />
     <Compile Include="Assets\Scripts\ShowSliderValue.cs" />
     <Compile Include="Assets\Scripts\TiltWindow.cs" />
+    <Compile Include="Assets\SoundDirector.cs" />
     <Compile Include="Assets\StageAssets\StageScript\CameraCintroller.cs" />
+    <Compile Include="Assets\StageAssets\StageScript\CreateItem.cs" />
+    <Compile Include="Assets\StageAssets\StageScript\CreateMap.cs" />
+    <Compile Include="Assets\StageAssets\StageScript\CreditMove.cs" />
+    <Compile Include="Assets\StageAssets\StageScript\CreditTimeLine.cs" />
+    <Compile Include="Assets\StageAssets\StageScript\DistanceManajer.cs" />
+    <Compile Include="Assets\StageAssets\StageScript\EnumLocal.cs" />
+    <Compile Include="Assets\StageAssets\StageScript\GameOverResult.cs" />
     <Compile Include="Assets\StageAssets\StageScript\ItemController.cs" />
     <Compile Include="Assets\StageAssets\StageScript\Life Time.cs" />
+    <Compile Include="Assets\StageAssets\StageScript\LocalText.cs" />
     <Compile Include="Assets\StageAssets\StageScript\PlayerController.cs" />
+    <Compile Include="Assets\StageAssets\StageScript\RetuneTitle.cs" />
+    <Compile Include="Assets\StageAssets\StageScript\RetuneToTitle.cs" />
+    <Compile Include="Assets\StageAssets\StageScript\ScoreResult.cs" />
+    <Compile Include="Assets\StageAssets\StageScript\SettingMove.cs" />
+    <Compile Include="Assets\StageAssets\StageScript\StartDirector.cs" />
+    <Compile Include="Assets\StageAssets\StageScript\TutorialMove.cs" />
     <Compile Include="Assets\StarSparrow\Readme\Readme Files\Scripts\Readme.cs" />
+    <Compile Include="Assets\StartDirectorforPhone.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Earth\Materials\EarthShader.shader" />

@@ -6,9 +6,9 @@ using UnityEngine.UI;
 public class PlayerControllerforSmartPhone : MonoBehaviour
 {
     public float shipSpeed = 50000;
-    public float accel = 30;
-    public float rightaccel = 25;
-    public float leftaccel = -25;
+    public float accel = 5;
+    public float rightaccel = 5;
+    public float leftaccel = -5;
 
     private Rigidbody rgbody;
     private Animator animator;
@@ -196,6 +196,10 @@ public class PlayerControllerforSmartPhone : MonoBehaviour
             BlackHoles.SetActive(false);
             GameObject.Find("Main Camera").GetComponent<AudioSource>().enabled = false;
             Destroy(Map);
+            Up.gameObject.SetActive(false);
+            Down.gameObject.SetActive(false);
+            Right.gameObject.SetActive(false);
+            Left.gameObject.SetActive(false);
             Siren.SetActive(true);
             animator.SetTrigger("Destroy");
             Invoke("Stop",4f);
@@ -210,6 +214,10 @@ public class PlayerControllerforSmartPhone : MonoBehaviour
             GameObject.Find("Main Camera").GetComponent<AudioSource>().enabled = false;
             Destroy(Map);
             Siren.SetActive(true);
+            Up.gameObject.SetActive(false);
+            Down.gameObject.SetActive(false);
+            Right.gameObject.SetActive(false);
+            Left.gameObject.SetActive(false);
             animator.SetTrigger("Destroy");
             Invoke("Stop", 4f);
         }
