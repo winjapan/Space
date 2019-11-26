@@ -78,7 +78,6 @@
     <Compile Include="Assets\JMO Assets\WarFX\Scripts\WFX_BulletHoleDecal.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Scripts\WFX_LightFlicker.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Spawn System\CFX_SpawnSystem.cs" />
-    <Compile Include="Assets\PlayerControllerforSmartPhone.cs" />
     <Compile Include="Assets\Scripts\ActiveStateToggler.cs" />
     <Compile Include="Assets\Scripts\ApplicationManager.cs" />
     <Compile Include="Assets\Scripts\ChangeColor.cs" />
@@ -103,14 +102,16 @@
     <Compile Include="Assets\StageAssets\StageScript\Life Time.cs" />
     <Compile Include="Assets\StageAssets\StageScript\LocalText.cs" />
     <Compile Include="Assets\StageAssets\StageScript\PlayerController.cs" />
+    <Compile Include="Assets\StageAssets\StageScript\PlayerControllerforSmartPhone.cs" />
     <Compile Include="Assets\StageAssets\StageScript\RetuneTitle.cs" />
     <Compile Include="Assets\StageAssets\StageScript\RetuneToTitle.cs" />
+    <Compile Include="Assets\StageAssets\StageScript\RetuneToTitleforDemo.cs" />
     <Compile Include="Assets\StageAssets\StageScript\ScoreResult.cs" />
     <Compile Include="Assets\StageAssets\StageScript\SettingMove.cs" />
     <Compile Include="Assets\StageAssets\StageScript\StartDirector.cs" />
+    <Compile Include="Assets\StageAssets\StageScript\StartDirectorforPhone.cs" />
     <Compile Include="Assets\StageAssets\StageScript\TutorialMove.cs" />
     <Compile Include="Assets\StarSparrow\Readme\Readme Files\Scripts\Readme.cs" />
-    <Compile Include="Assets\StartDirectorforPhone.cs" />
     <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S AlphaBlend Scroll.shader" />
     <None Include="Assets\JMO Assets\WarFX\Shaders\WFX_S Particle AddSoft A8.shader" />
     <None Include="Assets\Earth\Readme.txt" />
